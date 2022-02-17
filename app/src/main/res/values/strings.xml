@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Morse Converter</string>
+    <string name="hello_my_name_is_bar_i_am_young_developer_from_israel_haifa_nim_learning_in_practical_student_school_at_the_technion_nmy_biggest_goal_is_to_share_knowlendge_and_create_a_better_world_nthis_is_my_final_project_in_android_course_nhope_you_like_it">Hello , My name is bar , I am young developer from israel , haifa. \nim learning in practical student school , at the technion. \nmy biggest goal is to share knowlendge and create a better world. \nthis is my final project in android course. \nhope you like it. \n \n \nYou can share the installation, by clicking the download icon.</string>
+    <string name="share_app"></string>
+    <string name="share_text"></string>
+</resources>
