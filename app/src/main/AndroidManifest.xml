@@ -2,15 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.converter">
 
+    <!-- Corrected the permission name for CAMERA -->
     <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Permissions for External Storage (consider using Scoped Storage for Android 10 and above) -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.preission.CAMERA" />
+
+    <!-- Other permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
 
     <application
         android:allowBackup="true"
@@ -22,11 +25,7 @@
         <activity android:name=".about"
             android:screenOrientation="portrait"
             />
-
         <activity android:name=".MorseTable" />
-        <activity
-            android:name=".video"
-            android:screenOrientation="landscape" />
         <activity
             android:name=".Menu"
             android:screenOrientation="portrait" />
@@ -35,11 +34,8 @@
             android:screenOrientation="portrait" />
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait">
-
-            <!-- android:screenOrientation="landscape"> -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

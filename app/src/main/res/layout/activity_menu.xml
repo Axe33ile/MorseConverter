@@ -11,25 +11,13 @@
         android:id="@+id/morseConvertor"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:background="@drawable/morseconvertor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321"
-        android:background="@drawable/morseconvertor" />
-
-    <Button
-        android:id="@+id/movie"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.862"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321"
-        android:background="@drawable/movie" />
+        app:layout_constraintVertical_bias="0.325" />
 
     <Button
         android:id="@+id/about"

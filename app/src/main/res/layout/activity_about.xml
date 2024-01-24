@@ -72,20 +72,6 @@
         app:srcCompat="@drawable/linkedin" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="48dp"
-        android:layout_height="47dp"
-        android:background="@drawable/download"
-        android:onClick="buttonShareFile"
-        android:text="@string/share_app"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.458"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.818" />
-
-    <Button
         android:id="@+id/button3"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="32dp"

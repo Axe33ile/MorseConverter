@@ -32,18 +32,10 @@ public class Menu extends AppCompatActivity {
 
         convertor = (Button) findViewById(R.id.morseConvertor);
         convertor.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
             public void onClick(View v) {
                 Converter();
-            }
-        });
-
-
-        video = (Button) findViewById(R.id.movie);
-        video.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                video();
             }
         });
 
@@ -68,16 +60,12 @@ public class Menu extends AppCompatActivity {
     }
 
     //screen to converter
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void Converter() {
         Intent intent = new Intent(this, Converter.class);
         startActivity(intent);
     }
 
-    //screen to the video - "what is morse code?"
-    public void video() {
-        Intent intent = new Intent(this, video.class);
-        startActivity(intent);
-    }
 
     public void morseTable() {
         Intent intent = new Intent(this, MorseTable.class);
