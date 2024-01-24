@@ -55,7 +55,9 @@ public class Menu extends AppCompatActivity {
             }
         });
         showNotification();
+/*
         checkConnection();
+*/
 
     }
 
@@ -77,9 +79,9 @@ public class Menu extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void checkConnection() {
+   /* public void checkConnection() {
         ConnectivityManager manager = (ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetwork = manager.getActiveNetworkInfo();
+        NetworkInfo activeNetwork = manager.getActiveNetwork();
         if (null != activeNetwork) {
             if (activeNetwork.getType() == ConnectivityManager.TYPE_WIFI) {
                 Toast.makeText(this, "Wifi Enabled", Toast.LENGTH_SHORT).show();
@@ -91,10 +93,10 @@ public class Menu extends AppCompatActivity {
             }
         }
 
-    }//checkConnection
+    }//checkConnection*/
 
     //notification
-    String name="Bar";
+    String name="";
     String message=" .-.  ..-  -. ";
 
 
@@ -107,7 +109,7 @@ public class Menu extends AppCompatActivity {
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this,"channelId")
                 .setContentTitle("Hi "+name)
-                .setContentText("Last code you send was "+ message )
+                .setContentText("Last code you send was " )
                 .setSmallIcon(R.mipmap.ic_launcher);
 
         //nomination last until user erase it.

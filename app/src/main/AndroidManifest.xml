@@ -4,6 +4,9 @@
 
     <!-- Corrected the permission name for CAMERA -->
     <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CAMERA" />
 
     <!-- Permissions for External Storage (consider using Scoped Storage for Android 10 and above) -->
